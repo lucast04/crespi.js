@@ -1,0 +1,15 @@
+.container{
+    a{
+        text-transform: uppercase;
+        &:hover{
+            text-decoration: underline 0.2rem solid $dorado;
+            transition: text-decoration 0.3s ease-in-out;
+        }
+    }
+    .navbar-text{
+        text-transform: uppercase;
+        font-weight: bold;
+        font-family: 'Roboto', sans-serif;
+        color: $dorado;
+    }
+}

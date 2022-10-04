@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@import "./utilities/variables";
+@import "./components/s2";
+@import "./components/header";
+@import "./components/body";
+@import "./components/contacto";
+@import "./components/nosotros";
+@import "./components/index";
+@import "./components/subtitulos";
+@import "./components/menu";
+
+

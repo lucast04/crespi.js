@@ -1,0 +1,33 @@
+section{
+    .ubicacion{
+        p{
+            margin-top: 3rem;
+            text-align: center;
+            align-items: center;
+        }
+        .maps-ubicacion{
+            display: flex;
+            justify-content: center;
+        }
+        iframe{
+            border-radius: 1rem;
+        }
+    }
+}
+
+.formulario{
+    display: flex;
+    justify-content: center;
+    .formcontacto{
+        margin-top: 2rem;
+        width: 50%;
+    }
+    .mi-input{
+        border: 0.2rem solid $dorado;
+    }
+    .button{
+        display: flex;
+        justify-content: center;
+        margin-top: 1rem;
+    }
+}

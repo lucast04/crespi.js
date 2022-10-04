@@ -1,0 +1,38 @@
+@mixin tamanio($ancho,$alto){
+    width: $ancho;
+    height: $alto;
+}
+
+.imgmenu {
+    @include tamanio(10rem,10rem )
+}
+.carousel-item img{
+    @include tamanio(100%,5% )
+}
+
+$estilos: (
+    mayus: uppercase,
+    color: rgb(218, 165, 32),
+    centro: center,
+);
+
+h3 {
+    text-align: map-get($estilos, centro);
+    text-transform: map-get($estilos, mayus);
+}
+
+h2 {
+    background-color: map-get($estilos, color);
+    justify-content: map-get($estilos, centro);
+    text-transform: map-get($estilos, mayus);
+}
+
+.maps-ubicacion {
+    display: flex;
+    justify-content: center;
+}
+.videonosotros {
+    @extend .maps-ubicacion;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+}

@@ -1,0 +1,20 @@
+.mi-menu{
+    .col{
+        padding: 1.5rem;
+        h3{
+            text-align: center;
+        }
+        p{
+            text-align: justify;
+        }
+        &:hover{
+            transform: scale(1.2);
+            transition-duration: 0.7s;
+        }
+
+    }
+    .imgmenu{
+        border-radius: 3rem; 
+    }
+
+}
