@@ -1,0 +1,21 @@
+
+[{
+    "id": 1,
+    "nombre" : "V.Lugano",
+    "precio": 50
+},
+{
+    "id": 2,
+    "nombre" : "mataderos",
+    "precio": 150
+},
+{
+    "id": 3,
+    "nombre" : "V.Celina",
+    "precio": 100
+},
+{
+    "id": 4,
+    "nombre" : "tapiales",
+    "precio": 180
+}]

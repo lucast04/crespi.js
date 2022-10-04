@@ -3,6 +3,8 @@ const clickButton = document.querySelectorAll('.button')
 const tbody = document.querySelector('.tbody')
 const precioFinal = document.getElementById('totalDelPedido')
 const btnComprar = document.getElementById('btn-comprar')
+let contenido = document.getElementById("contenido")
+const btnListado = document.getElementById("btnListado")
 
 
 //crear array vacio para luego pushear precios del pedido
@@ -128,3 +130,31 @@ btnComprar.addEventListener('click', () =>{
         button: "Finalizar",
       });
 })
+
+
+
+// evento para el boton de envios
+btnListado.addEventListener("click", mostrarLista)
+
+//funcion del boton para que aparezca la lista
+function mostrarLista(){
+    //incorporacion de fetch para traer los productos almacenados en el array de json
+    fetch('envios.json')
+    .then(res => res.json())
+    .then(datos =>{
+        tabla(datos)
+    })
+}
+
+// funcion para incorporar los productos en la tabla de HTML
+function tabla(datos){
+    contenido.innerHTML= ""
+    for(let valor of datos){
+        contenido.innerHTML += `
+        <tr>
+            <th scope="row">${valor.id}</th>
+                <td>${valor.nombre}</td>
+                <td>${valor.precio}</td>
+        </tr>`
+    }
+}
